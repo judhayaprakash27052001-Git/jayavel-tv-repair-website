@@ -6,8 +6,10 @@
     <title>Udhayam TV Repair & Electronics Service | Since 1990 | LED | LCD | Smart TV | Chennai</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	
+	
     <style>
-        * {
+          * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -252,17 +254,6 @@
             text-align: center;
             position: relative;
             overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%234361ee' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
-            opacity: 0.1;
         }
 
         .hero-content {
@@ -624,6 +615,98 @@
             color: var(--accent);
         }
 
+        /* Google Maps Section */
+        .map-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, #f0f7ff 0%, #e3f2fd 100%);
+        }
+
+        .map-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .map-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .map-info {
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .map-info h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .map-info h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .map-details {
+            margin-bottom: 2rem;
+        }
+
+        .map-details p {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .map-details i {
+            color: var(--primary);
+            margin-top: 5px;
+        }
+
+        .directions-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gradient);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+        }
+
+        .directions-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(67, 97, 238, 0.4);
+        }
+
+        .google-map {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            height: 400px;
+        }
+
+        .google-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
         /* Contact Section */
         .contact {
             padding: 6rem 2rem;
@@ -744,34 +827,210 @@
             box-shadow: 0 15px 30px rgba(247, 37, 133, 0.3);
         }
 
-        /* Form Messages */
-        .form-message {
-            padding: 15px;
-            border-radius: var(--border-radius);
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .footer-logo {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        .footer-about p {
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+        }
+
+        .legacy-footer {
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+
+        .legacy-footer p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .legacy-footer i {
+            color: var(--gold);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
             margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .footer-links h4, .footer-hours h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-links h4::after, .footer-hours h4::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--accent);
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+
+        .footer-hours p {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-hours span {
+            opacity: 0.8;
+        }
+
+        .copyright {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             text-align: center;
-            display: none;
-            animation: fadeIn 0.5s ease;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+        .developer-credits {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
         }
 
-        .form-success {
-            background: linear-gradient(135deg, #4CAF50, #45a049);
+        .developer-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .developer-link:hover {
+            color: var(--gold);
+            text-decoration: underline;
+        }
+
+        .ai-credits {
+            color: var(--success);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Floating Elements */
+        .floating-elements {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
             color: white;
-            display: block;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            position: relative;
         }
 
-        .form-error {
-            background: linear-gradient(135deg, #f44336, #d32f2f);
-            color: white;
-            display: block;
+        .floating-btn.whatsapp {
+            background: #25D366;
         }
 
-        /* Issues Section */
+        .floating-btn.phone {
+            background: var(--primary);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(67, 97, 238, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(67, 97, 238, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(67, 97, 238, 0); }
+        }
+
+        .floating-btn:hover {
+            transform: translateY(-5px) scale(1.1);
+        }
+ /* Issues Section */
         .issues {
             padding: 6rem 2rem;
             background-color: #f8fafc;
@@ -893,15 +1152,20 @@
             transform: translateY(-5px) scale(1.1);
         }
 
+
         /* Responsive Design */
         @media (max-width: 1100px) {
             .hero h2 {
                 font-size: 3rem;
             }
             
-            .contact-container {
+            .contact-container, .map-wrapper {
                 grid-template-columns: 1fr;
                 gap: 3rem;
+            }
+            
+            .google-map {
+                height: 350px;
             }
         }
 
@@ -1008,12 +1272,8 @@
                 grid-template-columns: 1fr;
             }
             
-            .services, .issues, .contact {
+            .services, .map-section, .contact {
                 padding: 4rem 1rem;
-            }
-            
-            .issues-grid {
-                grid-template-columns: 1fr;
             }
             
             .floating-elements {
@@ -1027,8 +1287,12 @@
                 font-size: 1.3rem;
             }
             
-            .contact-form {
+            .contact-form, .map-info {
                 padding: 1.5rem;
+            }
+            
+            .google-map {
+                height: 300px;
             }
         }
 
@@ -1072,6 +1336,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#services">Services</a></li>
+					<li><a href="#map">Location</a></li>
                     <li><a href="#issues">TV Issues</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="tel:+919444140818" class="nav-cta">
@@ -1109,12 +1374,13 @@
             </div>
             
             <div class="cta-buttons">
-                <a href="tel:+919876543210" class="cta-button">
+                <a href="tel:+919444140818" class="cta-button">
                     <i class="fas fa-phone-alt"></i> Call Now: +91 9444140818
                 </a>
-                <a href="#contact" class="cta-button cta-secondary">
-                    <i class="fas fa-calendar-alt"></i> Schedule Service
-                </a>
+                 <a href="https://www.google.com/maps/dir/?api=1&destination=No+784+Ponniyamman+Kovil+1st+Street,+Vengadamangalam+Rd,+Melakottaiyur,+Chennai,+Tamil+Nadu+600127" 
+                       target="_blank" class="directions-btn">
+                        <i class="fas fa-directions"></i> Get Directions on Google Maps
+                    </a>
             </div>
         </div>
     </section>
@@ -1345,7 +1611,59 @@
             </div>
         </div>
     </section>
-
+<!-- Google Maps Section -->
+    <section class="map-section" id="map">
+        <div class="map-container">
+            <div class="section-title">
+                <h2>Our Location</h2>
+                <p class="section-subtitle">Visit our workshop in Chennai or get directions to our location</p>
+            </div>
+            
+            <div class="map-wrapper">
+                <div class="map-info">
+                    <h3>Visit Our Workshop</h3>
+                    <div class="map-details">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <strong>Address:</strong><br>
+                            No 784 Ponniyamman Kovil 1st Street,<br>
+                            Vengadamangalam Rd, Melakottaiyur,<br>
+                            Chennai, Tamil Nadu 600127
+                        </p>
+                        <p>
+                            <i class="fas fa-clock"></i>
+                            <strong>Working Hours:</strong><br>
+                            Monday - Saturday: 9:00 AM - 8:00 PM<br>
+                            Sunday: 10:00 AM - 6:00 PM
+                        </p>
+                        <p>
+                            <i class="fas fa-phone-alt"></i>
+                            <strong>Contact:</strong><br>
+                            +91 9444140818 | +91 9962225337
+                        </p>
+                        <p>
+                            <i class="fas fa-car"></i>
+                            <strong>Parking:</strong> Available in front of the shop
+                        </p>
+                    </div>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=No+784+Ponniyamman+Kovil+1st+Street,+Vengadamangalam+Rd,+Melakottaiyur,+Chennai,+Tamil+Nadu+600127" 
+                       target="_blank" class="directions-btn">
+                        <i class="fas fa-directions"></i> Get Directions on Google Maps
+                    </a>
+                </div>
+                
+                <div class="google-map">
+                    <!-- Google Maps Embed -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.347460477196!2d80.138542314823!3d13.059318690795827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260f6c4b3c3a1%3A0x1a8b4b6c0d8b7b1c!2sPonniyamman%20Kovil%201st%20St%2C%20Melakottaiyur%2C%20Chennai%2C%20Tamil%20Nadu%20600127!5e0!3m2!1sen!2sin!4v1647851556783!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Contact Section with Formspree Integration -->
     <section class="contact" id="contact">
         <div class="contact-container">
@@ -1430,152 +1748,77 @@
 			
         </div>
 		
-<!-- Credits Footer -->
-<footer class="credits-footer">
-  <div class="credits-container">
-
-    <div class="credits-content">
-      <p class="copyright">
-        &copy; 2026 Udhayam TV Repair & Electronics Service. All Rights Reserved.
-      </p>
-
-      <p class="builder">
-        Built with ❤️ by 
-        <a href="https://judhayaprakash27052001-git.github.io/Personal-Portfolio-Blog/" 
-           target="_blank" 
-           rel="noopener"
-           class="credits-link">
-          <i class="fas fa-code"></i> Udhaya
-        </a>
-
-        <span class="divider">|</span>
-
-        Powered by 
-        <span class="deepseek-credits">
-          <i class="fas fa-robot"></i> DeepSeek AI
-        </span>
-      </p>
-    </div>
-
-    <div class="tech-stack">
-      <span class="tech-tag">HTML5</span>
-      <span class="tech-tag">CSS3</span>
-      <span class="tech-tag">JavaScript</span>
-      <span class="tech-tag">Formspree</span>
-      <span class="tech-tag">GitHub Pages</span>
-    </div>
-
-  </div>
-</footer>
-<style>
-.credits-footer {
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  color: #fff;
-  padding: 2.5rem 1rem;
-  border-top: 3px solid var(--accent);
-}
-
-.credits-container {
-  max-width: 1100px;
-  margin: auto;
-  text-align: center;
-}
-
-/* Text */
-.credits-content p {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.85);
-}
-
-/* Builder row */
-.builder {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-}
-
-/* Links */
-.credits-link {
-  color: var(--success);
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  transition: 0.3s ease;
-}
-
-.credits-link:hover {
-  color: var(--accent-light);
-  transform: translateY(-2px);
-}
-
-/* AI Credit */
-.deepseek-credits {
-  color: var(--gold);
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-}
-
-/* Divider */
-.divider {
-  opacity: 0.5;
-  margin: 0 5px;
-}
-
-/* Tech Stack */
-.tech-stack {
-  margin-top: 1.2rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-/* Tags */
-.tech-tag {
-  padding: 6px 14px;
-  border-radius: 25px;
-  font-size: 0.75rem;
-  letter-spacing: 0.5px;
-  backdrop-filter: blur(8px);
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.2);
-  transition: 0.3s ease;
-}
-
-.tech-tag:hover {
-  background: var(--accent);
-  color: #fff;
-  transform: scale(1.08);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .credits-content p {
-    font-size: 0.8rem;
-  }
-
-  .tech-tag {
-    font-size: 0.65rem;
-    padding: 4px 10px;
-  }
-}
-</style>
-    </section>
+<!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <i class="fas fa-tv"></i>
+                </div>
+                <h3>Udhayam TV Repair & Electronics Service</h3>
+                <p>Trusted since 1990, we've been Chennai's go-to experts for TV and electronics repair for over 35 years.</p>
+                
+                <div class="legacy-footer">
+                    <p><i class="fas fa-history"></i> Serving Since: 1990</p>
+                    <p><i class="fas fa-user-tie"></i> 35+ Years Experience</p>
+                    <p><i class="fas fa-tv"></i> 5000+ TVs Repaired</p>
+                    <p><i class="fas fa-home"></i> 3rd Generation Family Business</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#experience"><i class="fas fa-chevron-right"></i> Our Legacy</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="#map"><i class="fas fa-chevron-right"></i> Location</a></li>
+                    <li><a href="#issues"><i class="fas fa-chevron-right"></i> issues</a></li>
+					<li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-hours">
+                <h4>Business Hours</h4>
+                <p>Monday <span>9:00 AM - 8:00 PM</span></p>
+                <p>Tuesday <span>9:00 AM - 8:00 PM</span></p>
+                <p>Wednesday <span>9:00 AM - 8:00 PM</span></p>
+                <p>Thursday <span>9:00 AM - 8:00 PM</span></p>
+                <p>Friday <span>9:00 AM - 8:00 PM</span></p>
+                <p>Saturday <span>9:00 AM - 8:00 PM</span></p>
+                <p>Sunday <span>10:00 AM - 6:00 PM</span></p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2026 Udhayam TV Repair & Electronics Service. All rights reserved.</p>
+            <p>Established 1990 • 35+ Years Experience • 5000+ TVs Repaired • LED | LCD | Smart TV Repair</p>
+            <p class="developer-credits">
+                Built with ❤️ by 
+                <a href="https://judhayaprakash27052001-git.github.io/Personal-Portfolio-Blog/" target="_blank" class="developer-link">
+                    <i class="fas fa-code"></i>Udhaya
+                </a>
+                | Powered by  
+                <span class="ai-credits">
+                    <i class="fas fa-robot"></i> DeepSeek AI
+                </span>
+            </p>
+        </div>
+    </footer>
 
     <!-- Floating Buttons -->
     <div class="floating-elements">
-        <a href="https://wa.me/9962225337" class="floating-btn whatsapp" target="_blank">
+        <a href="https://wa.me/919962225337" class="floating-btn whatsapp" target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="tel:+919962225337" class="floating-btn phone">
+        <a href="tel:+91944140818" class="floating-btn phone">
             <i class="fas fa-phone-alt"></i>
         </a>
     </div>
@@ -1796,10 +2039,10 @@
                 stat.textContent = '0';
             });
             
-            // Set current year in copyright if needed
+            // Set current year in copyright
             const currentYear = new Date().getFullYear();
-            document.querySelectorAll('[data-year]').forEach(el => {
-                el.textContent = currentYear;
+            document.querySelectorAll('.copyright p:first-child').forEach(el => {
+                el.textContent = el.textContent.replace('2026', currentYear);
             });
         });
         
